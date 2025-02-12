@@ -1,0 +1,48 @@
+package lab3_2_2sem;
+
+public abstract class Person {
+    private String lastName;
+    private String firstName;
+    private String numberPhone;
+
+    public Person(String firstName, String lastName, String numberPhone) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.numberPhone = numberPhone;
+    }
+    public Person() {
+        this.firstName ="";
+        this.lastName = "";
+        this.numberPhone = "";
+    }
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getNumberPhone() {
+        return numberPhone;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setNumberPhone(String numberPhone) {
+        this.numberPhone = numberPhone;
+    }
+
+    @Override
+    public String toString() {
+        return "LastName='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", numberPhone='" + numberPhone + '\'';
+    }
+}
